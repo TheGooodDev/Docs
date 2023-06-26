@@ -142,7 +142,25 @@ async function main() {
 main();
 
 ```
+Import CSV
 
+---
+
+```javascript
+const fs = require("fs");
+const { parse } = require("csv-parse")
+
+let tab = ["title","name","adress","realAdress","departement","country","tel","email"]
+await fs.createReadStream("./contacts.csv")
+      .pipe(parse({ delimiter: ",", from_line: 2 }))
+      .on("data", async function (row) {
+        let obj = {};
+        row.forEach((element,i) => {
+          obj[tab[i]] = element;
+        });
+        await db.create("restaurants", obj);
+      });;
+```
 
 
 
