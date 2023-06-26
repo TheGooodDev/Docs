@@ -1,7 +1,6 @@
 {
   "name": "cours_nosql",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +12,15 @@
     "csv": "^6.3.1",
     "mongodb": "5.5",
     "surrealdb.js": "^0.7.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheGooodDev/Docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheGooodDev/Docs/issues"
+  },
+  "homepage": "https://github.com/TheGooodDev/Docs#readme",
+  "description": ""
 }
